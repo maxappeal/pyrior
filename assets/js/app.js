@@ -43,4 +43,12 @@ if (document.forms[0] && window.FormData) {
     });
 }
 
+var list = document.getElementsByClassName('selector');
 
+for (var i=0; i<list.length; i++) {
+    list[i].addEventListener('click', function() {
+        var id = this.id.replace('Link', '');
+        document.getElementsByClassName('show')[0].classList.remove('show');
+        document.getElementById(id).classList.add('show');
+    });
+}

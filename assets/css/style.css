@@ -1,0 +1,7 @@
+.containers {
+    display: none;
+}
+
+.containers.show {
+    display: block;
+}
